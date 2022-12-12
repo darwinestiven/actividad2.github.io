@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<title>Programación avanzada</title>
+</head>
+<body>
+
+	<div class="page-header bg-primary text-white text-center">
+		<span class="h4">Registro de clientes</span>
+	</div>
+
+	<form action="codigo.php" method="POST" style="width:25%;margin:0 auto;">
+
+		<fieldset>
+			
+			<legend class="text-center header text-success">Datos personales</legend>
+			<div class="form-group">
+
+				<label for="nom">Primer apellido</label>
+				<input type="text" class="form-control" name="papellido">
+				
+
+			</div>
+			<div class="form-group">
+
+				<label for="nom">Segundo apellido</label>
+				<input type="text" class="form-control" name="sapellido">
+				
+
+			</div>
+			<div class="form-group">
+
+				<label for="nom">Primer nombre</label>
+				<input type="text" class="form-control" name="pnombre">
+				
+
+			</div>
+			<div class="form-group">
+
+				<label for="nom">Segundo nombre</label>
+				<input type="text" class="form-control" name="snombre">
+				
+
+			</div>
+			<div class="form-group">
+
+				<label for="email">Ciudad:</label>
+				<input type="text" class="form-control" name="ciudad">
+				
+
+			</div>
+			<div class="form-group">
+
+				<label for="">Edad</label>
+				<input type="text" class="form-control" name="edad">
+				
+
+			</div>
+			<div class="form-group">
+				<div class="checkbox"></div>
+
+				<label for="">Recordarme</label>
+				<input type="checkbox" name="direccion">
+			</div>
+			
+
+		</div>
+
+		<div class="form-group">
+
+			
+			<input type="submit" class="btn btn-success" value="Añadir" name="añadir">
+			<input type="submit" class="btn btn-success" value="Modificar" name="modificar">
+			<input type="submit" class="btn btn-success" value="Eliminar" name="eliminar">
+			
+
+		</div>
+
+	</fieldset>
+	
+
+</form>
+
+
+
+</div>
+</html>
