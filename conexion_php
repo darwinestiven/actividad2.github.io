@@ -1,0 +1,22 @@
+<?php
+
+$host='localhost';
+$bd='pro_avanzada';
+$user='postgres';
+$pass='1234';
+
+$conexion=pg_connect("host=$host dbname=$bd user=$user password=$pass");
+
+$query=("INSERT INTO usuario(primer_apellido,segundo_apellido,
+	primer_nombre,segundo_nombre,ciudad,edad)
+	VALUES('$_REQUEST[papellido]','$_REQUEST[sapellido]',
+	'$_REQUEST[pnombre]','$_REQUEST[snombre]',
+	'$_REQUEST[ciudad]','$_REQUEST[edad]')");
+
+$consulta=pg_query($conexion,$query);
+if($consulta){
+	echo 'Datos insertados correctamente ';
+}
+pg_close();
+
+?>
